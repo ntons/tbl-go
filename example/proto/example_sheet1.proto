@@ -1,0 +1,23 @@
+
+// This file was generated automatically by tblmaker.
+// DO NOT edit it manually!
+// Created At: 2020-03-20 14:19:57
+
+syntax = "proto3";
+
+package example;
+
+import "common.proto";
+
+message ExampleSheet1 {
+    int32 id = 1;
+    string name = 2;
+    repeated int64 values = 3;
+    repeated string strings = 4;
+    message Nested {
+        int32 id = 1;
+        string name = 2;
+    }
+    Nested item = 5;
+    repeated Item items = 6;
+}
